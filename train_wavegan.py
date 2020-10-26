@@ -590,7 +590,7 @@ if __name__ == '__main__':
       help='Number of groups to test')
 
   parser.set_defaults(
-    data_dir=None,
+    data_dir='./nsynth-test/audio',
     data_sample_rate=16000,
     data_slice_len=16384,
     data_num_channels=1,
