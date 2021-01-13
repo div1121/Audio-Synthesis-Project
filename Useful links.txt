@@ -1,0 +1,3 @@
+https://github.com/div1121/ESTR3108-AI-Project
+https://github.com/chrisdonahue/wavegan#monitoring-1
+https://paperswithcode.com/method/specgan
