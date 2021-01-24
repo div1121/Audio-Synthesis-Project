@@ -19,12 +19,12 @@ Generator:
 ![alt text](https://github.com/div1121/ESTR3108-AI-Project/blob/main/Training%20Result/DCGAN/DCGAN-Generator-structure.JPG)
 
 ## WGAN (proposed from the WGAN paper)
-Similar structure as DCGAN
+Similar structure as DCGAN.
 
 In the training process, we update the discriminator model five more times than the generator each iteration. After each mini batch update in discriminator, the weights of discriminator model are constrained within [-0.01,0.01] in order to fulfill the Lipschitz constraint, which is weight clipping approach. Wasserstein loss function replaces the objective function in previous DCGAN to train the critic and generator models that promote larger difference between scores for real and generated images, where in implementation, the class label for real audio is 1 while for fake audio is –1.
 
 ## WGAN-GP (proposed from the WGAN-GP paper)
-Similar structure as DCGAN
+Similar structure as DCGAN.
 
 The main difference from previous WGAN model is the replacement of gradient penalty instead of weight clipping. The additional term from above is added into the error function, to penalize the model if the gradient norm moves away from its target norm value 1, where the gradient is taken from the random sample point between the real audio and fake audio, which can ensure the Lipschitz constraint. We set the gradient penalty coefficient λ as 10 in our model.
 
