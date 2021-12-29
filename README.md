@@ -1,4 +1,4 @@
-# ESTR3108-AI-Project: Audio synthesis with Generative Adversarial Network
+# Audio synthesis with Generative Adversarial Network
 
 # Introduction
 
